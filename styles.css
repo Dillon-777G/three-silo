@@ -1,0 +1,140 @@
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #3103034b; /* Light gray */
+}
+
+header, nav, section, footer {
+    padding: 20px;
+    border: 1px solid #000000d8;
+    background-color: #7c5c663d;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 10px;
+    z-index: 1;
+    position: relative;  /* This ensures the content layers on top of the video */
+}
+
+img {
+    max-width: 100%;
+}
+
+nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #3b3535;
+}
+
+/* Unvisited link */
+nav a:link, nav a:visited, nav a:hover, nav a:active {
+    color: #d4d3d3;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Space between images */
+}
+
+.image-gallery img {
+    width: 300px; /* Adjust based on your preference */
+    height: auto;
+    border: 1px solid #743706cc;
+}
+
+/* Chatbot UI styles */
+
+#chat-interface { 
+    width: 800px;  /* Or any desired width */
+    height:700px;
+    max-height: 800px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;  /* This centers it on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #a3637657;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+#chat-list {
+    list-style-type: none; /* Removes the default bullet points of <ul> */
+    margin: 0;             /* Removes default margin */
+    padding: 0;            /* Removes default padding */
+    overflow-y: auto;      /* Allows vertical scrolling if content overflows */
+    max-height: 750px;     /* You might need to adjust this based on your desired design */
+}
+
+
+.message {
+    word-wrap: break-word;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    max-width: 80%;
+    display: inline-block; /* Helps with alignment */
+}
+
+.user .message {
+    word-wrap: break-word;
+    background-color: #e6f7ff;
+    margin-left: auto;
+    border-bottom-right-radius: 5px;
+}
+
+.bot .message {
+    word-wrap: break-word;
+    background-color: #fff3e6;
+    margin-right: auto;
+    border-bottom-left-radius: 5px;
+}
+
+#input-container {
+    position: relative;  /* Establish a positioning context for children */
+    width: calc(100% - 20px); /* A bit less than 100% to account for padding */
+    margin-top: 10px;
+    border: transparent;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+#user-input {
+    background: solid #e0e0e0; /* Make the input transparent to show the container's style */
+    /* Remove the border as the container now has it */
+    border-radius: 20px;
+    padding: 10px 60px 10px 15px; /* Add space on the right for the button */
+    width: 100%;
+    box-sizing: border-box; /* Ensure padding doesn't add extra width */
+}
+
+button {
+    position: absolute; /* Absolute positioning inside the container */
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%); /* Center the button vertically */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#user-input:focus {
+    outline: none; /* Optional: remove the focus outline */
+}
+
+button:hover {
+    background-color: #0056b3; /* Slightly darker blue for hover effect */
+}
