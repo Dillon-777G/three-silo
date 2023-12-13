@@ -1,14 +1,5 @@
-DELETE EVERYTHING WHEN RESTARTING 
-
-
-1.) pip install virtualenv
-    -virtualenv myenv
-        -source myenv/bin/activate
-2.)pip install google-cloud-aiplatform
-    -pip install google-cloud-aiplatform[preview]
-   IF MOBILE: 
-        AUTHENTICATE: $ gcloud auth application-default login
-            $ gcloud auth login
-3.)pip install flask
-    -pip install flask_cors
-4.)Run python3 Ugotserver1.py in the virtual environment
+This project is a simple artistic website that was also interlaced with a chatbot designed to 
+talk about gluten-free recipes and assist with meal prepping. It is currently depreceated and now 
+will only lay out a basic website. In the future this wil be implemented with chatgpt and launched
+as an accessible site. As of now it stands as an example of implementing html,css, javascript, and
+python all together to simulate the feel of a modern website. 
