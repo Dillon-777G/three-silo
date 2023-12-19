@@ -2,7 +2,7 @@ body, html {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #3103034b; /* Light gray */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 header, nav, section, footer {
@@ -15,8 +15,11 @@ header, nav, section, footer {
     border-top-right-radius: 5px;
     margin: 10px;
     z-index: 1;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;  /* This ensures the content layers on top of the video */
+}
+
+.universal-box-shadow {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -58,8 +61,13 @@ nav a:hover{
 }
 
 .image-content img {
+    width: 1200px; /* Width set to 800px */
+    height: 600px; /* Height set to 600px */
+    object-fit: cover;
     max-width: 100%; /* Ensures the image is responsive and fits its container */
     height: auto; /* Maintains aspect ratio */
+    border: 5px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav a:hover {
@@ -70,12 +78,14 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 50px; /* Space between images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .image-gallery img {
     width: 300px; /* Adjust based on your preference */
     height: auto;
     border: 1px solid #743706cc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Chatbot UI styles */
@@ -88,7 +98,6 @@ nav a:hover {
     border-radius: 10px;
     padding: 20px;
     margin: 0 auto;  /* This centers it on the page */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #a3637657;
     overflow-y: auto;
     display: flex;
